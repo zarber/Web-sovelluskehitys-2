@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <p>Hello 1</p>
+
+    <p>Hello 2</p>
+
+    <p>Hello 3</p>
+
+    <p>Hello 4</p>
+
+    <script>
+      // This is nodeList
+      const nodeList = document.querySelectorAll('p');
+      console.log(nodeList);
+
+      // Converting to array using Array.from() method
+      const array = Array.from(nodeList);
+      console.log(array);
+    </script>
+  </body>
+</html>
