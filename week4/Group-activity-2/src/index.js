@@ -6,15 +6,24 @@ add.addEventListener('click', async () => {
     const res = await fetch('https://dog.ceo/api/breeds/image/random');
     const data = await res.json();
     console.log(data);
+
     const url = data.message; // URL of new dog image
     console.log(url);
+
     /*--------------- Get breed (Hint: Parse from URL using split) ---------------- */
-    // Your code here
+    displayDog(url);
 
     /*------------ Create new dog card with the url above ------------- */
     /* (use the HTML structure for the current dog image in the index.html
             file to create a new image with the url) */
-    // Your code here
+    const newDog = document.createElement('li');
+    const figure = document.createElement('figure');
+    const image = document.createElement('img')
+
+    newDog.addEventListener("click", function() {
+      document.getElementById(figure);
+    }); 
+
 
     /* Add the new dog card as a child to the ul in the .gallery element */
     // Your code here
