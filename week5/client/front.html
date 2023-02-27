@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <div class="App">
+      <header>
+        <div class="container">
+          <a href="#/"><h1>Workout Buddy</h1></a>
+          <nav>
+            <div>
+              <a href="#" id="logout">Logout</a>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <div class="pages">
+        <div class="home">
+          <div class="workouts">
+            <div class="workout-details">
+              <h4>workout 1</h4>
+              <p><strong>Load (kg): </strong>10</p>
+              <p><strong>Reps: </strong>3</p>
+              <p>less than a minute ago</p>
+              <span class="material-symbols-outlined">delete</span>
+            </div>
+          </div>
+          <form class="create">
+            <h3>Add a New Workout</h3>
+            <label>Excersize Title:</label
+            ><input type="text" class="" value="" /><label>Load (in kg):</label
+            ><input type="number" class="" value="" /><label>Reps:</label
+            ><input type="number" class="" value="" />
+            <button>Add Workout</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/check-login.js"></script>
+    <script src="./js/serialize.js"></script>
+    <script src="./js/logout.js"></script>
+    <script src="./js/front.js"></script>
+  </body>
+</html>
