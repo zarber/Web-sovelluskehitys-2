@@ -1,0 +1,27 @@
+{{!-- views/auth/signup.hbs --}}
+
+<div id="form">
+  <h2>Signup</h2>
+  <form action="/signup" method="POST">
+
+    <label> Username
+      <input type="text" name="username" placeholder="Arbi" />
+    </label>
+
+    <label> Email
+      <input type="email" name="email" placeholder="arbi@zarbi.com" />
+    </label>
+
+    <label> Password
+      <input type="password" name="password" placeholder="********" />
+    </label>
+
+    <label> Birthday
+      <input type="birthday" name="birthday" placeholder="25/01/2000" />
+    </label>
+
+    <button type="submit">Create account</button>
+
+    {{!-- error message will be added here --}}
+  </form>
+</div>
